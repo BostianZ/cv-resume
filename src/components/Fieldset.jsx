@@ -1,4 +1,5 @@
 import Input from "./Input";
+import Textarea from "./Textarea";
 
 export default function Fieldset(props) {
   return (
@@ -7,6 +8,7 @@ export default function Fieldset(props) {
       <Input label="Test1" type="text" />
       <Input label="Test1" type="text" />
       <Input label="Test1" type="text" />
+      {props.legend.startsWith("J") ? <Textarea /> : false}
     </fieldset>
   );
 }

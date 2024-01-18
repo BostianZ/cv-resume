@@ -1,37 +1,17 @@
 import Button from "./Button";
+import Fieldset from "./Fieldset";
 
 export default function Form() {
   return (
     <div>
       <form>
-        <fieldset>
-          <legend>General Information:</legend>
-            <label>Test</label>
-            <input></input>
-            <label>Test2</label>
-            <input></input>
-            <label>Test3</label>
-            <input></input>
-        </fieldset>
-        <fieldset>
-          <legend>Education Experience:</legend>
-            <label>Test</label>
-            <input></input>
-            <label>Test2</label>
-            <input></input>
-            <label>Test3</label>
-            <input></input>
-        </fieldset>
-        <fieldset>
-          <legend>Job Experience:</legend>
-            <label>Test</label>
-            <input></input>
-            <label>Test2</label>
-            <input></input>
-            <label>Test3</label>
-            <input></input>
-        </fieldset>
-        <Button type="submit" name="Submit"></Button>
+        <Fieldset legend="General Information" />
+        <Fieldset legend="Educational Experience" />
+        <Fieldset legend="Job Experience" />
+        <div>
+          <Button type="submit" name="Submit" />
+          <Button type="submit" name="Edit" />
+        </div>
       </form>
     </div>
   );
